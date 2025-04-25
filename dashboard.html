@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Welcome to Event Management System</h2>
+    <p>Your one-stop platform to explore, create, and manage events with ease! Whether it's a tech seminar, cultural fest, sports tournament, or a fun workshop, we bring it all together for you.
+
+        Stay updated, register easily, and never miss out on the exciting happenings around your campus and community. Let’s make every event count!</p>
+    
+    <div style="margin-top: 30px;">
+        <h3>Quick Links</h3>
+        <div style="display: flex; gap: 20px; margin-top: 20px;">
+            <a href="{{ url_for('upcoming_events') }}" class="btn">View Upcoming Events</a>
+            <a href="{{ url_for('joined_events') }}" class="btn">View Joined Events</a>
+            <a href="{{ url_for('create_event') }}" class="btn">Create New Event</a>
+        </div>
+    </div>
+</div>
+{% endblock %} 
